@@ -1,0 +1,142 @@
+[
+    {
+        "Apellido": "Ramirez",
+        "Ciudad": "Medellin",
+        "Dirección": "Cr 75 # 23-32",
+        "ID_A": 1,
+        "Nombre": "Juan"
+    },
+    {
+        "Apellido": "Bedoya",
+        "Ciudad": "Medellin",
+        "Dirección": "Cr 75 # 65-85",
+        "ID_A": 2,
+        "Nombre": "Juan Camilo"
+    },
+    {
+        "Apellido": "Caballero",
+        "Ciudad": "Envigado",
+        "Dirección": "Cr 82 # 55-7",
+        "ID_A": 3,
+        "Nombre": "Jorge"
+    },
+    {
+        "Apellido": "Mejia",
+        "Ciudad": "Sabaneta",
+        "Dirección": "Cl 14 # 14-45",
+        "ID_A": 4,
+        "Nombre": "Luis"
+    },
+    {
+        "Apellido": "Molina",
+        "Ciudad": "Itagui",
+        "Dirección": "Cl 45 # 17-45",
+        "ID_A": 5,
+        "Nombre": "Mario"
+    },
+    {
+        "Apellido": "Morato",
+        "Ciudad": "Medellin",
+        "Dirección": "Cl 45 # 30-33",
+        "ID_A": 6,
+        "Nombre": "Manuel"
+    },
+    {
+        "Apellido": "Agudelo",
+        "Ciudad": "Medellin",
+        "Dirección": "Cr 52 # 5-7",
+        "ID_A": 7,
+        "Nombre": "Miguel"
+    },
+    {
+        "Apellido": "Velasquez",
+        "Ciudad": "Medellin",
+        "Dirección": "Cr 45 # 2-22",
+        "ID_A": 8,
+        "Nombre": "Mariana"
+    },
+    {
+        "Apellido": "Lis",
+        "Ciudad": "Medellin",
+        "Dirección": "Cl 29 # 14-22",
+        "ID_A": 9,
+        "Nombre": "Alejandra"
+    },
+    {
+        "Apellido": "Rodriguez",
+        "Ciudad": "Sabaneta",
+        "Dirección": "Cl 48 # 7-14",
+        "ID_A": 10,
+        "Nombre": "Alfredo"
+    },
+    {
+        "Apellido": "Ramirez",
+        "Ciudad": "Sabaneta",
+        "Dirección": "Cl 5 # 2-4",
+        "ID_A": 11,
+        "Nombre": "Juana"
+    },
+    {
+        "Apellido": "Echeverri",
+        "Ciudad": "Itagui",
+        "Dirección": "Cr 40 # 7-8",
+        "ID_A": 12,
+        "Nombre": "Julian"
+    },
+    {
+        "Apellido": "Echeverri",
+        "Ciudad": "Medellin",
+        "Dirección": "Cr 30 # 45-50",
+        "ID_A": 13,
+        "Nombre": "Jaime"
+    },
+    {
+        "Apellido": "Villaleal",
+        "Ciudad": "Medellin",
+        "Dirección": "Cr 31 # 70-75",
+        "ID_A": 14,
+        "Nombre": "Felipe"
+    },
+    {
+        "Apellido": "Villa",
+        "Ciudad": "Itagui",
+        "Dirección": "Cr 10 # 45-55",
+        "ID_A": 15,
+        "Nombre": "Juan Pablo"
+    },
+    {
+        "Apellido": "Zapata",
+        "Ciudad": "Medellin",
+        "Dirección": "Cl 19 # 70-65",
+        "ID_A": 16,
+        "Nombre": "Alejandro"
+    },
+    {
+        "Apellido": "Arcila",
+        "Ciudad": "Medellin",
+        "Dirección": "Cr 9 # 14-17",
+        "ID_A": 17,
+        "Nombre": "Daniel"
+    },
+    {
+        "Apellido": "Montoya",
+        "Ciudad": "La Estrella",
+        "Dirección": "Cr 4 # 20-29",
+        "ID_A": 18,
+        "Nombre": "Daniela"
+    },
+    {
+        "Apellido": "Velez",
+        "Ciudad": "La Estrella",
+        "Dirección": "Cr 70 # 25-32",
+        "ID_A": 19,
+        "Nombre": "Alix"
+    },
+    {
+        "Apellido": "Velasquez",
+        "Ciudad": "Medellin",
+        "Dirección": "Cr 65 # 19-27",
+        "ID_A": 20,
+        "Nombre": "Isabela"
+    }
+]

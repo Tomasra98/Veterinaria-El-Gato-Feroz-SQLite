@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/USUARIO/Desktop/Universidad/Introducción a Ingeniería de Sistemas/Veterinaria El Gato Feroz SQLite Tomas/Tomas Ramirez Veterinaria El Gato Feroz.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1346"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,5:mainCitas"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Amos" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="5" mode="0"/></sort><column_widths><column index="1" value="40"/><column index="2" value="76"/><column index="3" value="65"/><column index="4" value="66"/><column index="5" value="88"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Citas" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="4" mode="0"/></sort><column_widths><column index="1" value="70"/><column index="2" value="73"/><column index="3" value="111"/><column index="4" value="85"/><column index="5" value="129"/></column_widths><filter_values/><conditional_formats><column index="2"/></conditional_formats><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Mascotas" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="3" mode="0"/></sort><column_widths><column index="1" value="60"/><column index="2" value="75"/><column index="3" value="76"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Veterinarios" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="3" mode="0"/></sort><column_widths><column index="1" value="58"/><column index="2" value="76"/><column index="3" value="78"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQLite Veterinaria Tomas Final.sql">-- Creamos la tabla de Mascotas --
+CREATE TABLE Mascotas (ID_M INTEGER PRIMARY KEY, Especie text NOT NULL, Nombre text NOT NULL)
+-- Creamos la tabla de Veterinarios --
+CREATE TABLE Veterinarios (ID_V INTEGER PRIMARY KEY, Nombre text not NULL, Apellido text not NULL)
+-- Creamos la tabla de Amos --
+CREATE TABLE Amos (ID_A INTEGER PRIMARY key, Nombre TEXT NOT NULL, Apellido TEXT not NULL, Ciudad TEXT NOT NULL, Dirección TEXT not NULL)
+-- Creamos la tabla de Citas --
+CREATE TABLE Citas (Código INTEGER PRIMARY KEY, Fecha text not NULL, ID_Mascotas INTEGER REFERENCES Mascotas(ID_M), ID_Amos INTEGER REFERENCES Amos(ID_A), ID_Veterinarios INTEGER REFERENCES Veterinarios(ID_V))
+-- Metemos o insertamos cada uno de los datos de la tabla Mascotas --
+INSERT INTO Mascotas VALUES (&quot;23&quot;, &quot;Gato&quot;, &quot;Figaro&quot;)
+-- Mostramos la tabla Mascotas --
+SELECT * FROM Mascotas
+-- Metemos o insertamos cada uno de los datos de la tabla Amos --
+INSERT INTO Amos VALUES (&quot;20&quot;, &quot;Isabela&quot;, &quot;Velasquez&quot;,&quot;Medellin&quot;,&quot;Cr 65 # 19-27&quot;)
+-- Mostramos la tabla Amos --
+SELECT * FROM Amos
+-- Metemos o insertamos cada uno de los datos de la tabla Veterinarios --
+INSERT INTO Veterinarios VALUES (&quot;20&quot;, &quot;Karol&quot;, &quot;Lizarazu&quot;)
+-- Mostramos la tabla Veterinarios --
+SELECT * FROM Veterinarios
+-- Metemos o insertamos cada uno de los datos de la tabla Citas --
+INSERT INTO Citas VALUES (&quot;125&quot;, &quot;16/09/2023&quot;, &quot;23&quot;, &quot;20&quot;, &quot;20&quot;)
+-- Mostramos la tabla Citas --
+SELECT * FROM Citas
+-- 1. Médico que más citas atiende --
+SELECT V.Nombre, COUNT(C.Código) AS NumCitas
+FROM Veterinarios V
+JOIN Citas C ON V.ID_V = C.ID_Veterinarios
+GROUP BY V.ID_V
+ORDER BY NumCitas DESC
+LIMIT 1;
+-- 2. Mascota que más veces ha sido atendida --
+SELECT M.Nombre, COUNT(C.Código) AS NumCitas
+FROM Mascotas M
+JOIN Citas C ON M.ID_M = C.ID_Mascotas
+GROUP BY M.ID_M
+ORDER BY NumCitas DESC
+LIMIT 1;
+-- 3. Amos con varias Mascotas --
+SELECT ID_Amos, COUNT(*) AS TotalMascotas
+FROM Citas
+GROUP BY ID_Amos
+HAVING TotalMascotas &gt; 1;
+-- 4. Promedio de Citas por día --
+SELECT COUNT(*) / COUNT(DISTINCT Fecha) AS PromedioCitasPorDia
+FROM Citas;
+-- 5. Cantidad de Amos registrados en la Ciudad de Medellin --
+SELECT COUNT(*) AS CantidadAmosMedellin
+FROM Amos
+WHERE Ciudad = 'Medellin';
+-- 6. Gatos que asistieron a Citas en enero --
+SELECT M.Nombre
+FROM Mascotas M
+JOIN Citas C ON M.ID_M = C.ID_Mascotas
+WHERE M.Especie = 'Gato' AND strftime('%m', C.Fecha) = '01';
+-- 7. Cantidad de Perros atendidos por un Veterinario específico --
+SELECT V.Nombre, COUNT(M.ID_M) AS CantidadPerros
+FROM Veterinarios V
+JOIN Citas C ON V.ID_V = C.ID_Veterinarios
+JOIN Mascotas M ON C.ID_Mascotas = M.ID_M
+WHERE M.Especie = 'Perro' AND V.Nombre = 'Alfred'
+GROUP BY V.ID_V;
+-- 8. Amos que tienen perros y gatos --
+SELECT ID_A, A.Nombre, A.Apellido
+FROM Amos A
+JOIN Mascotas M ON ID_A = ID_M
+WHERE M.Especie IN ('Perro', 'Gato')
+GROUP BY ID_A, A.Nombre;
+-- 9. Listado de Mascotas que no son ni gatos ni perros y sus Amos --
+SELECT M.Nombre AS NombreMascota, M.Especie, A.Nombre AS NombreAmo, A.Apellido AS ApellidoAmo
+FROM Mascotas M
+JOIN Amos A ON M.ID_Amos = A.ID_A
+WHERE M.Especie NOT IN ('Gato', 'Perro');
+-- 10. Dirección del Amo que más Mascotas llevó a consulta --
+SELECT A.Dirección
+FROM Amos A
+JOIN (
+  SELECT ID_Amos, COUNT(ID_Mascotas) AS NumMascotas
+  FROM Citas
+  GROUP BY ID_Amos
+  ORDER BY NumMascotas DESC)
+  LIMIT 1
+</sql><current_tab id="0"/></tab_sql></sqlb_project>

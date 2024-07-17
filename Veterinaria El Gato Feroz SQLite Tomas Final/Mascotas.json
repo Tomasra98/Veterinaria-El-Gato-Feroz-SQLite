@@ -1,0 +1,117 @@
+[
+    {
+        "Especie": "Perro",
+        "ID_M": 1,
+        "Nombre": "Zeus"
+    },
+    {
+        "Especie": "Gato",
+        "ID_M": 2,
+        "Nombre": "Garfield"
+    },
+    {
+        "Especie": "Perro",
+        "ID_M": 3,
+        "Nombre": "Doky"
+    },
+    {
+        "Especie": "Gato",
+        "ID_M": 4,
+        "Nombre": "Michis"
+    },
+    {
+        "Especie": "Gato",
+        "ID_M": 5,
+        "Nombre": "Mateo"
+    },
+    {
+        "Especie": "Perro",
+        "ID_M": 6,
+        "Nombre": "Mia"
+    },
+    {
+        "Especie": "Gato",
+        "ID_M": 7,
+        "Nombre": "Poseidon"
+    },
+    {
+        "Especie": "Perro",
+        "ID_M": 8,
+        "Nombre": "Lucas"
+    },
+    {
+        "Especie": "Perro",
+        "ID_M": 9,
+        "Nombre": "Channel"
+    },
+    {
+        "Especie": "Perro",
+        "ID_M": 10,
+        "Nombre": "Princesa"
+    },
+    {
+        "Especie": "Gato",
+        "ID_M": 11,
+        "Nombre": "Chiqui"
+    },
+    {
+        "Especie": "Gato",
+        "ID_M": 12,
+        "Nombre": "Felix"
+    },
+    {
+        "Especie": "Perro",
+        "ID_M": 13,
+        "Nombre": "Rocky"
+    },
+    {
+        "Especie": "Gato",
+        "ID_M": 14,
+        "Nombre": "Tom"
+    },
+    {
+        "Especie": "Perro",
+        "ID_M": 15,
+        "Nombre": "Luigi"
+    },
+    {
+        "Especie": "Gato",
+        "ID_M": 16,
+        "Nombre": "Mario"
+    },
+    {
+        "Especie": "Hamster",
+        "ID_M": 17,
+        "Nombre": "Alvin"
+    },
+    {
+        "Especie": "Hamster",
+        "ID_M": 18,
+        "Nombre": "Aquiles"
+    },
+    {
+        "Especie": "Conejo",
+        "ID_M": 19,
+        "Nombre": "Blanco"
+    },
+    {
+        "Especie": "Conejo",
+        "ID_M": 20,
+        "Nombre": "Negro"
+    },
+    {
+        "Especie": "Perro",
+        "ID_M": 21,
+        "Nombre": "Joshua"
+    },
+    {
+        "Especie": "Gato",
+        "ID_M": 22,
+        "Nombre": "Tiger"
+    },
+    {
+        "Especie": "Gato",
+        "ID_M": 23,
+        "Nombre": "Figaro"
+    }
+]

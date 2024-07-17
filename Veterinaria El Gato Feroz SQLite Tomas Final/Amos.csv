@@ -1,0 +1,21 @@
+ID_A,Nombre,Apellido,Ciudad,Dirección
+1,Juan,Ramirez,Medellin,Cr 75 # 23-32
+2,Juan Camilo,Bedoya,Medellin,Cr 75 # 65-85
+3,Jorge,Caballero,Envigado,Cr 82 # 55-7
+4,Luis,Mejia,Sabaneta,Cl 14 # 14-45
+5,Mario,Molina,Itagui,Cl 45 # 17-45
+6,Manuel,Morato,Medellin,Cl 45 # 30-33
+7,Miguel,Agudelo,Medellin,Cr 52 # 5-7
+8,Mariana,Velasquez,Medellin,Cr 45 # 2-22
+9,Alejandra,Lis,Medellin,Cl 29 # 14-22
+10,Alfredo,Rodriguez,Sabaneta,Cl 48 # 7-14
+11,Juana,Ramirez,Sabaneta,Cl 5 # 2-4
+12,Julian,Echeverri,Itagui,Cr 40 # 7-8
+13,Jaime,Echeverri,Medellin,Cr 30 # 45-50
+14,Felipe,Villaleal,Medellin,Cr 31 # 70-75
+15,Juan Pablo,Villa,Itagui,Cr 10 # 45-55
+16,Alejandro,Zapata,Medellin,Cl 19 # 70-65
+17,Daniel,Arcila,Medellin,Cr 9 # 14-17
+18,Daniela,Montoya,La Estrella,Cr 4 # 20-29
+19,Alix,Velez,La Estrella,Cr 70 # 25-32
+20,Isabela,Velasquez,Medellin,Cr 65 # 19-27

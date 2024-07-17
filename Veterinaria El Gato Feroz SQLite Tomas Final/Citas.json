@@ -1,0 +1,184 @@
+[
+    {
+        "Código": 100,
+        "Fecha": "06/06/2023",
+        "ID_Amos": 1,
+        "ID_Mascotas": 1,
+        "ID_Veterinarios": 1
+    },
+    {
+        "Código": 101,
+        "Fecha": "08/06/2023",
+        "ID_Amos": 2,
+        "ID_Mascotas": 2,
+        "ID_Veterinarios": 1
+    },
+    {
+        "Código": 102,
+        "Fecha": "10/06/2023",
+        "ID_Amos": 3,
+        "ID_Mascotas": 3,
+        "ID_Veterinarios": 1
+    },
+    {
+        "Código": 103,
+        "Fecha": "11/01/2023",
+        "ID_Amos": 1,
+        "ID_Mascotas": 1,
+        "ID_Veterinarios": 2
+    },
+    {
+        "Código": 104,
+        "Fecha": "20/01/2023",
+        "ID_Amos": 1,
+        "ID_Mascotas": 1,
+        "ID_Veterinarios": 3
+    },
+    {
+        "Código": 105,
+        "Fecha": "29/01/2023",
+        "ID_Amos": 2,
+        "ID_Mascotas": 4,
+        "ID_Veterinarios": 3
+    },
+    {
+        "Código": 106,
+        "Fecha": "07/02/2023",
+        "ID_Amos": 2,
+        "ID_Mascotas": 5,
+        "ID_Veterinarios": 4
+    },
+    {
+        "Código": 107,
+        "Fecha": "08/06/2023",
+        "ID_Amos": 4,
+        "ID_Mascotas": 6,
+        "ID_Veterinarios": 5
+    },
+    {
+        "Código": 108,
+        "Fecha": "30/08/2023",
+        "ID_Amos": 4,
+        "ID_Mascotas": 7,
+        "ID_Veterinarios": 5
+    },
+    {
+        "Código": 109,
+        "Fecha": "30/08/2023",
+        "ID_Amos": 5,
+        "ID_Mascotas": 8,
+        "ID_Veterinarios": 6
+    },
+    {
+        "Código": 110,
+        "Fecha": "30/08/2023",
+        "ID_Amos": 6,
+        "ID_Mascotas": 9,
+        "ID_Veterinarios": 7
+    },
+    {
+        "Código": 111,
+        "Fecha": "06/06/2023",
+        "ID_Amos": 7,
+        "ID_Mascotas": 10,
+        "ID_Veterinarios": 8
+    },
+    {
+        "Código": 112,
+        "Fecha": "08/06/2023",
+        "ID_Amos": 8,
+        "ID_Mascotas": 11,
+        "ID_Veterinarios": 9
+    },
+    {
+        "Código": 113,
+        "Fecha": "02/01/2023",
+        "ID_Amos": 9,
+        "ID_Mascotas": 12,
+        "ID_Veterinarios": 10
+    },
+    {
+        "Código": 114,
+        "Fecha": "20/01/2023",
+        "ID_Amos": 10,
+        "ID_Mascotas": 14,
+        "ID_Veterinarios": 11
+    },
+    {
+        "Código": 115,
+        "Fecha": "20/07/2023",
+        "ID_Amos": 11,
+        "ID_Mascotas": 13,
+        "ID_Veterinarios": 12
+    },
+    {
+        "Código": 116,
+        "Fecha": "30/12/2023",
+        "ID_Amos": 12,
+        "ID_Mascotas": 15,
+        "ID_Veterinarios": 1
+    },
+    {
+        "Código": 117,
+        "Fecha": "06/12/2023",
+        "ID_Amos": 12,
+        "ID_Mascotas": 15,
+        "ID_Veterinarios": 1
+    },
+    {
+        "Código": 118,
+        "Fecha": "05/06/2023",
+        "ID_Amos": 13,
+        "ID_Mascotas": 16,
+        "ID_Veterinarios": 13
+    },
+    {
+        "Código": 119,
+        "Fecha": "04/06/2023",
+        "ID_Amos": 14,
+        "ID_Mascotas": 17,
+        "ID_Veterinarios": 14
+    },
+    {
+        "Código": 120,
+        "Fecha": "08/06/2023",
+        "ID_Amos": 15,
+        "ID_Mascotas": 18,
+        "ID_Veterinarios": 15
+    },
+    {
+        "Código": 121,
+        "Fecha": "09/07/2023",
+        "ID_Amos": 16,
+        "ID_Mascotas": 19,
+        "ID_Veterinarios": 16
+    },
+    {
+        "Código": 122,
+        "Fecha": "10/07/2023",
+        "ID_Amos": 17,
+        "ID_Mascotas": 20,
+        "ID_Veterinarios": 17
+    },
+    {
+        "Código": 123,
+        "Fecha": "15/06/2023",
+        "ID_Amos": 18,
+        "ID_Mascotas": 21,
+        "ID_Veterinarios": 18
+    },
+    {
+        "Código": 124,
+        "Fecha": "15/03/2023",
+        "ID_Amos": 19,
+        "ID_Mascotas": 22,
+        "ID_Veterinarios": 19
+    },
+    {
+        "Código": 125,
+        "Fecha": "16/09/2023",
+        "ID_Amos": 20,
+        "ID_Mascotas": 23,
+        "ID_Veterinarios": 20
+    }
+]
